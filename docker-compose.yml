@@ -1,0 +1,19 @@
+version: '3'
+services:
+  oracle-19c:
+    image: doctorkirk/oracle-19c
+    container_name: oracle19c
+    ports:
+      - "1521:1521"
+    environment:
+      ORACLE_SID: ORCLCDB
+      ORACLE_PDB: ORCLPDB1
+      ORACLE_PWD: ORACLE123*
+      ORACLE_CHARACTERSET: AL32UTF8
+    volumes:
+      - oracle19c-data:/opt/oracle/oradata
+    restart: always
+
+volumes:
+  oracle19c-data:
+
