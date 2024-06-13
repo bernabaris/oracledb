@@ -19,4 +19,13 @@ Clone this repository to your local machine.
 
 ```sh
 git clone https://github.com/bernabaris/oracledb.git
-cd oracledb
+```
+### 2. Navigate to the directory:
+   ```sh
+   cd oracledb
+```
+### 3. Start the Oracle 19c container
+  ```sh
+   docker compose up -d
+```
+
