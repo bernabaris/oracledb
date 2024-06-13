@@ -28,4 +28,8 @@ git clone https://github.com/bernabaris/oracledb.git
   ```sh
    docker compose up -d
 ```
+### 4. Check the container status
+  ```sh
+   docker ps
+```
 
